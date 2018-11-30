@@ -1,0 +1,55 @@
+/***************************************************
+  04. Preloader
+****************************************************/
+.oily-loader-1 {
+  border: 16px solid #fff;
+  border-top: 16px solid #222;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  -webkit-animation: oily-spin-1 2s linear infinite;
+          animation: oily-spin-1 2s linear infinite;
+}
+
+@-webkit-keyframes oily-spin-1 {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes oily-spin-1 {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+// default style
+.preloader {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: #222;
+  left: 0;
+  top: 0;
+  z-index: 9999999999;
+}
+
+.preloader div {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: 0;
+  margin-left: -50px;
+  margin-top: -50px;
+}
